@@ -1,4 +1,7 @@
 # Output and printing
+from ssl import OP_NO_RENEGOTIATION
+
+
 print('Hello World!')
 
 #float
@@ -77,7 +80,47 @@ hello = 'heLLO World'
 print(hello.lower().count('o'))
 
 # CONDITIONAL OPERATORS
+x = 'hello'
+y = 3
 
+print(x * y)
 
+#########
+x = 'hello'
+y = 'yes'
+
+print(x + y)
+
+##########
+x = "hello"
+y = "hello"
+
+print(x != y)
+
+##########
+print ('a' > 'Z')
+# this returns true b/c everything in python is rep by ASCII code
+print(ord('Z'))
+print(ord('a'))
+
+print('ab' > 'ad')
+print()
+
+# CHAINED CONDITIONALS
+
+x = 7
+y = 8
+z = 0
+
+result1 = x == y 
+result2 = y > x
+result3 = z < x + 2
+
+# result4 = result1 or not result2 or result3
+# or will look at left hand side and right hand side
+# print(result4)
+
+print(not(False and True or True))
+# not is first, and is second and or is last. 
 
 
